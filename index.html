@@ -50,24 +50,21 @@
 
         <div class="menu-container js-menu-container" id="mobile-menu">
             <div class="container mobile-contacts-wrap">
-                <button class="menu-toggle js-close-menu">
-                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
+                <button class="menu-toggle menu-toggle-close js-close-menu">
+                    <svg width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-modal"></use>
                     </svg>
                 </button>
 
                 <ul class="mobile-menu list">
                     <li>
-                        <a href="" class="link">About</a>
+                        <a href="" class="link current mobile-nav-link">Studio</a>
                     </li>
                     <li>
-                        <a href="" class="link">Products</a>
+                        <a href="" class="link mobile-nav-link">Portfolio</a>
                     </li>
                     <li>
-                        <a href="" class="link">Contacts</a>
+                        <a href="" class="link mobile-nav-link">Contacts</a>
                     </li>
                 </ul>
 
@@ -195,33 +192,36 @@
                 <ul class="list work-title">
                     <li class="work-set">
                         <picture>
-                            <source srcset="./images/work/laptop.jpg 1x" type="image/jpeg" />
                             <source srcset="./images/work/laptop2x.jpg 2x" type="image/jpeg" />
                             <img src="./images/work/laptop.jpg" alt="Monitor screen" width="360" height="300" />
                         </picture>
                     </li>
                     <li class="work-set">
                         <picture>
-                            <source srcset="./images/work/laptop2x.jpg 2x" type="image/jpeg" />
-                            <img src="./images/work/laptop.jpg" alt="Monitor screen" width="360" height="300" />
+                            <source srcset="./images/work/mobile2x.jpg 2x" type="image/jpeg" />
+                            <img src="./images/work/mobile.jpg" alt="Mobile screen" width="360" height="300" />
                         </picture>
                     </li>
                     <li class="work-set">
                         <picture>
-                            <source srcset="./images/work/laptop2x.jpg 2x" type="image/jpeg" />
-                            <img src="./images/work/laptop.jpg" alt="Monitor screen" width="360" height="300" />
+                            <source srcset="./images/work/device2x.jpg 2x" type="image/jpeg" />
+                            <img src="./images/work/device.jpg" alt="device screen" width="360" height="300" />
                         </picture>
                     </li>
                 </ul>
             </div>
         </section>
         <!--4 Team -->
-        <!-- <section class="team">
+        <section class="team">
             <div class="container team-wrapper">
                 <h2 class="team-item">Our Team</h2>
                 <ul class="list team-list">
                     <li class="color-team-item">
-                        <img src="./images/team/img.jpg" alt="mark" width="264" />
+                        <picture>
+                            <source srcset="./images/team/mark2x.jpg 2x" type="image/jpeg" />
+                            <img src="./images/team/mark.jpg" alt="mark" width="264" height="260" />
+                        </picture>
+
                         <div class="tem-cards">
                             <h3 class="people-names">Mark Guerrero</h3>
                             <p class="team-position">Product Designer</p>
@@ -262,7 +262,10 @@
                         </div>
                     </li>
                     <li class="color-team-item">
-                        <img src="./images/team/1.jpg" alt="tom" width="264" />
+                        <picture>
+                            <source srcset="./images/team/tom2x.jpg 2x" type="image/jpeg" />
+                            <img src="./images/team/tom.jpg" alt="tom" width="264" height="260" />
+                        </picture>
                         <div class="tem-cards">
                             <h3 class="people-names">Tom Ford</h3>
                             <p class="team-position">Frontend Developer</p>
@@ -303,7 +306,10 @@
                         </div>
                     </li>
                     <li class="color-team-item">
-                        <img src="./images/team/img(1).jpg" alt="Camila" width="264" />
+                        <picture>
+                            <source srcset="./images/team/camilla2x.jpg 2x" type="image/jpeg" />
+                            <img src="./images/team/camilla.jpg" alt="camilla" width="264" height="260" />
+                        </picture>
                         <div class="tem-cards">
                             <h3 class="people-names">Camila Garcia</h3>
                             <p class="team-position">Marketing</p>
@@ -344,7 +350,10 @@
                         </div>
                     </li>
                     <li class="color-team-item">
-                        <img src="./images/team/img(2).jpg" alt="Deniel" width="264" />
+                        <picture>
+                            <source srcset="./images/team/daniel2x.jpg 2x" type="image/jpeg" />
+                            <img src="./images/team/daniel.jpg" alt="daniel" width="264" height="260" />
+                        </picture>
                         <div class="tem-cards">
                             <h3 class="people-names">Daniel Wilson</h3>
                             <p class="team-position">UI Designer</p>
@@ -386,10 +395,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!--5 Company -->
-        <!-- <section class="company">
+        <section class="company">
             <div class="container company-list">
                 <h2 class="our-customers">Customers</h2>
 
@@ -440,10 +449,10 @@
 
             </div>
         </section>
-    </main> -->
-        <!-- Footer -->
+    </main>
+    <!-- Footer -->
 
-        <!-- 
+
     <footer class="footer-list">
         <div class="container oll-footer">
             <div class="logo-container">
@@ -491,11 +500,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="Subscribe">
+            <div class="subscribe">
                 <p class="footer-form-sub">Subscribe</p>
                 <form class="footer-form">
-                    <label for="Subscribe"></label>
-                    <input type="text" name="Subscribe" id="Subscribe" placeholder="E-mail">
+                    <input class="footer-form-input" type="text" placeholder="E-mail">
                     <button class="footer-form-button" type="submit"> Subscribe
                         <svg class="button-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -511,75 +519,75 @@
 
         </div>
 
-    </footer> -->
+    </footer>
 
-        <!-- Modal-Window -->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button class="modal-btn" type="button" data-modal-close>
-                    <svg class="modal-icon-svg" width="8" height="8">
-                        <use href="./images/icons.svg#icon-close-modal"></use>
+    <!-- Modal-Window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+                <svg class="modal-icon-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form>
+                <div class="form">
+                    <label class="modal-form" for="name">Name</label>
+                    <input type="text" name="name" id="name" />
+                    <svg class="icon-form" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z"
+                            fill="current" />
                     </svg>
-                </button>
-                <p class="modal-title">Leave your contacts and we will call you back</p>
-                <form>
-                    <div class="form">
-                        <label class="modal-form" for="name">Name</label>
-                        <input type="text" name="name" id="name" />
-                        <svg class="icon-form" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z"
-                                fill="current" />
-                        </svg>
 
 
 
-                    </div>
-                    <div class="form">
-                        <label class="modal-form" for="user-phone">Phone</label>
-                        <input type="text" name="phone" id="user-phone" />
-                        <svg class="icon-form" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.7263 8.86511L9.88811 8.65525C9.44667 8.60459 9.01246 8.75656 8.70128 9.06775L7.36971 10.3993C5.3217 9.35722 3.64276 7.68551 2.60067 5.63025L3.93947 4.29144C4.25065 3.98025 4.40263 3.54605 4.35197 3.1046L4.1421 1.28092C4.05526 0.549999 3.44013 0 2.70198 0H1.45002C0.632259 0 -0.0479991 0.680262 0.00265842 1.49802C0.386208 7.67827 5.32894 12.6138 11.5019 12.9973C12.3197 13.048 12.9999 12.3677 12.9999 11.55V10.298C13.0072 9.56709 12.4572 8.95196 11.7263 8.86511Z"
-                                fill="current" />
-                        </svg>
+                </div>
+                <div class="form">
+                    <label class="modal-form" for="user-phone">Phone</label>
+                    <input type="text" name="phone" id="user-phone" />
+                    <svg class="icon-form" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.7263 8.86511L9.88811 8.65525C9.44667 8.60459 9.01246 8.75656 8.70128 9.06775L7.36971 10.3993C5.3217 9.35722 3.64276 7.68551 2.60067 5.63025L3.93947 4.29144C4.25065 3.98025 4.40263 3.54605 4.35197 3.1046L4.1421 1.28092C4.05526 0.549999 3.44013 0 2.70198 0H1.45002C0.632259 0 -0.0479991 0.680262 0.00265842 1.49802C0.386208 7.67827 5.32894 12.6138 11.5019 12.9973C12.3197 13.048 12.9999 12.3677 12.9999 11.55V10.298C13.0072 9.56709 12.4572 8.95196 11.7263 8.86511Z"
+                            fill="current" />
+                    </svg>
 
-                    </div>
-                    <div class="form">
-                        <label class="modal-form" for="user-email">Email</label>
-                        <input type="email" name="email" id="user-email" />
-                        <svg class="icon-form" width="16" height="12" viewBox="0 0 16 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z"
-                                fill="current" />
-                        </svg>
+                </div>
+                <div class="form">
+                    <label class="modal-form" for="user-email">Email</label>
+                    <input type="email" name="email" id="user-email" />
+                    <svg class="icon-form" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z"
+                            fill="current" />
+                    </svg>
 
-                    </div>
-                    <div class="form text">
-                        <label class="modal-form" for="comment">comment</label>
-                        <textarea class="textr-comment" name="comment" id="comment" placeholder="Text input"></textarea>
-                    </div>
-                    <div class="policy">
-                        <input class="chek" type="checkbox" name="policy" id="policy">
-                        <label class="modal-form accept" for="policy">I accept the terms and conditions of the
-                            <span>&nbsp;<a class="link-policy" href=""> Privacy Policy </a></span></label>
-                    </div>
-                    <div class="button-submit">
-                        <button class="form-button" type="submit">Send</button>
-                    </div>
-                </form>
-            </div>
-
+                </div>
+                <div class="form text">
+                    <label class="modal-form" for="comment">comment</label>
+                    <textarea class="textr-comment" name="comment" id="comment" placeholder="Text input"></textarea>
+                </div>
+                <div class="policy">
+                    <input class="chek" type="checkbox" name="policy" id="policy">
+                    <label class="modal-form accept" for="policy">I accept the terms and conditions of the
+                        <span>&nbsp;<a class="link-policy" href=""> Privacy Policy </a></span></label>
+                </div>
+                <div class="button-submit">
+                    <button class="form-button" type="submit">Send</button>
+                </div>
+            </form>
         </div>
-        <!-- Mobile-menu-window -->
+
+    </div>
+    <!-- Mobile-menu-window -->
 
 
 
-        <script src="./js/mobile-menu.js"></script>
-        <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
