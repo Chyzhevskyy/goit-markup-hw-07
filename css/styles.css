@@ -1362,8 +1362,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 1.15;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--iris);
